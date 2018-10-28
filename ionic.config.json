@@ -1,0 +1,7 @@
+{
+  "name": "CaronaFurg",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
