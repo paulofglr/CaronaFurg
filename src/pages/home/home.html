@@ -1,14 +1,53 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Menu
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+    <ion-slides pager>
+
+        <ion-slide>
+          <h2>Caronas Disponiveis</h2>
+          <ion-list>
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="img/thumbnail-totoro.png">
+                </ion-thumbnail>
+                <h2>Fábio Rocha</h2>
+                <p>Carreiros</p>
+                <button ion-button clear item-end>View</button>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="img/thumbnail-totoro.png">
+                  </ion-thumbnail>
+                  <h2>Paulo Rodrigues</h2>
+                  <p>Cidade Nova</p>
+                  <button ion-button clear item-end>View</button>
+                </ion-item>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="img/thumbnail-totoro.png">
+                    </ion-thumbnail>
+                    <h2>Giovane Vidan</h2>
+                    <p>Praça</p>
+                    <button ion-button clear item-end>View</button>
+                  </ion-item>
+
+            </ion-list>
+            
+        </ion-slide>
+      
+        <ion-slide>
+          <h2>Contatos</h2>
+        </ion-slide>
+      
+        <ion-slide>
+          <h2>Meu Carro</h2>
+        </ion-slide>
+      
+      </ion-slides>
 </ion-content>
