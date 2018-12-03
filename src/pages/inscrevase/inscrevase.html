@@ -15,4 +15,21 @@
 
 <ion-content padding>
 
+    <ion-item>
+        <ion-label>
+          Email
+        </ion-label>
+        <ion-input type="text" [(ngModel)]="user.email" placeholder=""></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          Password
+        </ion-label>
+        <ion-input type="password" [(ngModel)]="user.password" placeholder=""></ion-input>
+      </ion-item>
+      <div class="spacer" style="height:40px;" id="login-spacer1"></div>
+      <button ion-button color="stable" block (click)="register(user)">
+        Registrar
+      </button>
+
 </ion-content>

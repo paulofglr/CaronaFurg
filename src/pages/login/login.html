@@ -17,28 +17,32 @@
   <br><br>
   <img src="assets/imgs/logo_carona_furg.jpg" style="display:block;width:50%;height:auto;margin-left:auto;margin-right:auto;" />
  <div class="spacer" style="width:300px;height:20px;" id="login-spacer2"></div>
+
+ <ion-item>
+  <ion-label>
+    Email
+  </ion-label>
+  <ion-input type="text" [(ngModel)]="user.email" placeholder=""></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label>
+    Password
+  </ion-label>
+  <ion-input type="password" [(ngModel)]="user.password" placeholder=""></ion-input>
+</ion-item>
+<div class="spacer" style="height:40px;" id="login-spacer1"></div>
+<button ion-button color="stable" block (click)="login(user)">
+  Log in
+</button>
+<br>
+<br>
+<a (click)="register()">Inscreva-se</a>
+
  <form id="login-form1">
    <ion-list id="login-list1">
-     <ion-item id="login-input1">
-       <ion-label>
-         Email
-       </ion-label>
-       <ion-input type="email" placeholder=""></ion-input>
-     </ion-item>
-     <ion-item id="login-input2">
-       <ion-label>
-         Password
-       </ion-label>
-       <ion-input type="password" placeholder=""></ion-input>
-     </ion-item>
+     
    </ion-list>
-   <div class="spacer" style="height:40px;" id="login-spacer1"></div>
-   <button id="login-button1" ion-button color="stable" block on-click="goToHomePage()">
-     Log in
-   </button>
-   <br>
-   <br>
-   <a (click)="goToInscrevasePage()">Inscreva-se</a>
+   
  </form>
 
 </ion-content>
